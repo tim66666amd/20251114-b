@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sketch</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <!-- 置中容器樣式（若已在 style.css 設定，可移除此段） -->
+    <style>
+      html, body {
+        height: 100%;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #f5f5f5;
+      }
+      /* 畫布放在此容器內，方便置中與加邊框/陰影 */
+      #sketch-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    </style>
+
+    <script src="libraries/p5.min.js"></script>
+    <script src="libraries/p5.sound.min.js"></script>
+  </head>
+
+  <body>
+    <!-- p5 畫布會被 parent 到這個容器 -->
+    <div id="sketch-container"></div>
+    <script src="sketch.js"></script>
+  </body>
+</html>
